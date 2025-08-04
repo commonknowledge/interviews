@@ -1,5 +1,7 @@
 import { listPeople } from "@/server/repositories/People";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const people = await listPeople();
   return (
